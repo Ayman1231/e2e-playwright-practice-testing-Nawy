@@ -1,0 +1,17 @@
+{
+  "name": "playwright-task",
+  "version": "1.0.0",
+  "description": "Playwright automation project",
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test tests/e2e-ui-api.spec.ts",
+    "test:e2e:headed": "playwright test tests/e2e-ui-api.spec.ts --project=chromium --headed",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "install:browsers": "playwright install chromium firefox"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.0.0"
+  }
+}
